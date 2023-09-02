@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Selector</title>
+    <link rel="stylesheet" href="lmao.css">
+</head>
+<body>
+    <div class="room-selector">
+        <div class="room-info">
+            <h2>Room Name</h2>
+            <p class="info-desc">Room Description Goes Here</p>
+            <p class="price">Price: $XXX per night</p>
+            <div class="amenities-section">
+                <h3>Amenities:</h3>
+                <ul class="amenities-list">
+                    <li class="amenity-item">Free Wi-Fi</li>
+                    <li class="amenity-item">TV</li>
+                    <li class="amenity-item">Air Conditioning</li>
+                    <li class="amenity-item">Amenity 4</li>
+                    <li class="amenity-item">Amenity 5</li>
+                    <li class="amenity-item hidden">Amenity 6</li>
+                    <li class="amenity-item hidden">Amenity 7</li>
+                    <!-- Add more amenities as needed -->
+                </ul>
+            </div>
+            <button class="toggle-amenities-btn">Read More</button>
+        </div>
+        <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&w=1000&q=80" alt="Room Image">
+        </div>
+        <div class="room-select">
+            <button class="room-btn" data-room="Room1"></button>
+        </div>
+    </div>
+    <div class="room-selector">
+        <div class="room-info">
+            <h2>Room Name</h2>
+            <p class="info-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis natus nisi error, deleniti, eligendi alias minima recusandae aliquid quisquam officiis beatae eos quibusdam architecto sit.
+            </p>
+            <p class="price">Price: $XXX per night</p>
+            <div class="amenities-section">
+                <h3>Amenities:</h3>
+                <ul class="amenities-list">
+                    <li class="amenity-item">Free Wi-Fi</li>
+                    <li class="amenity-item">TV</li>
+                    <li class="amenity-item">Air Conditioning</li>
+                    <li class="amenity-item">Amenity 4</li>
+                    <li class="amenity-item">Amenity 5</li>
+                    <li class="amenity-item hidden">Amenity 6</li>
+                    <li class="amenity-item hidden">Amenity 7</li>
+                    <!-- Add more amenities as needed -->
+                </ul>
+            </div>
+            <button class="toggle-amenities-btn">Read More</button>
+        </div>
+        <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&w=1000&q=80" alt="Room Image">
+        </div>
+        <div class="room-select">
+            <button class="room-btn" data-room="Room2"></button>
+        </div>
+    </div>
+    <div class="room-selector">
+        <div class="room-info">
+            <h2>Room Name</h2>
+            <p class="info-desc">Room Description Goes Here</p>
+            <p class="price">Price: $XXX per night</p>
+            <div class="amenities-section">
+                <h3>Amenities:</h3>
+                <ul class="amenities-list">
+                    <li class="amenity-item">Free Wi-Fi</li>
+                    <li class="amenity-item">TV</li>
+                    <li class="amenity-item">Air Conditioning</li>
+                    <li class="amenity-item">Amenity 4</li>
+                    <li class="amenity-item">Amenity 5</li>
+                    <li class="amenity-item hidden">Amenity 6</li>
+                    <li class="amenity-item hidden">Amenity 7</li>
+                    <!-- Add more amenities as needed -->
+                </ul>
+            </div>
+            <button class="toggle-amenities-btn">Read More</button>
+        </div>
+        <div class="room-img">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&w=1000&q=80" alt="Room Image">
+        </div>
+        <div class="room-select">
+            <button class="room-btn" data-room="Room3"></button>
+        </div>
+    </div>
+    <div class="user-info">
+        <h2>Provide Your Information</h2>
+        <form id="userInfoForm" onsubmit="submitForm(event)">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" required><br>
+
+            <label for="numberOfPeople">Number of People:</label>
+            <input type="number" id="numberOfPeople" required><br>
+
+            <label for="customerPhoneNumber">Phone Number:</label>
+            <input type="tel" id="customerPhoneNumber" required><br>
+
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail" required><br>
+
+            <input type="submit" value="Submit Booking">
+        </form>
+    </div>
+    <script src="lmao.js"></script>
+</body>
+</html>
