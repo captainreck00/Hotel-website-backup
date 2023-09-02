@@ -208,6 +208,9 @@ function submitForm(event) {
                 };
                 const userDataJSON = JSON.stringify(userData);
                 // Display the JSON data (you can replace this with your preferred method)
+                
+        
+                //to the server
                 const requestOptions = {
                     method: "POST",
                     headers: {
@@ -216,7 +219,7 @@ function submitForm(event) {
                     body: JSON.stringify(userData)
                   };
                   
-                const serverURL = "http://127.0.0.1:5000/protected-page";
+                const serverURL = "http://127.0.0.1:5000";
                 
                 fetch(serverURL, requestOptions)
                 .then(response => {
@@ -237,8 +240,6 @@ function submitForm(event) {
                 .catch(error => {
                     console.error('Error:', error.message);
                 });
-        
-                // Convert the JSON object to a JSON string for easy transmission or storage
                 
             }
             else{
@@ -257,3 +258,5 @@ function submitForm(event) {
         alert("Please select a room before submitting.");
     }
 }
+
+//to the server

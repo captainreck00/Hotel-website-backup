@@ -6,7 +6,6 @@ import secrets
 
 app = Flask(__name__)
 
-CORS(app)
 
 app.secret_key = 'ASDHFOT568As51@#'
 
@@ -32,9 +31,24 @@ def login():
 @app.route('/protected-page', methods=['GET'])
 def protected_page():
     if session.get('is_verified')==True:
-        return render_template('homepage.html')
+        return render_template('index.html')
     else:
         return redirect('/')
+    
+@app.route('/protected-page', methods=['POST'])
+def booking_data():
+    try:
+        user_data = request.get_json()
+        print(user_data)
+        return jsonify({"message": "Success"})  # Or an appropriate response
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500  # Return an error response
+       
+       
+
+
 
 if __name__ == '__main__':
+    app.static_folder = 'static'
     app.run(debug=True)
+
