@@ -7,6 +7,25 @@
     src: url('fonts/Vision-Bold.otf') format('opentype'); 
 }
 
+#info-link{
+    background-color: #101010;
+    color: #F7F2FD;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Vision';
+    cursor: pointer;
+    width: 100%;
+    text-align: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+.customer-info{
+    display: flex;
+    flex-grow: 1;
+}
+
+
 
 
 .home {

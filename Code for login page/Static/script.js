@@ -201,12 +201,13 @@ function submitForm(event) {
             if(emailPattern.test(customerEmail)){
                 const userData = {
                     "Name": customerName,
-                    "Number of People": numberOfPeople,
-                    "Phone Number": customerPhoneNumber,
                     "Email": customerEmail,
-                    "Selected Room Type": selectedRoom
+                    "Phone Number": customerPhoneNumber,
+                    "Number of People": numberOfPeople,
+                    "Room Type": selectedRoom
                 };
                 const userDataJSON = JSON.stringify(userData);
+                console.log(userDataJSON)
                 // Display the JSON data (you can replace this with your preferred method)
                 const requestOptions = {
                     method: "POST",
@@ -230,7 +231,7 @@ function submitForm(event) {
                     if (data.verified === "yes") {
                     console.log("Verified");
                     } else {
-                    console.log(requestOptions)
+
                     console.log("Not Verified");
                     }
                 })
@@ -257,3 +258,7 @@ function submitForm(event) {
         alert("Please select a room before submitting.");
     }
 }
+
+
+
+  

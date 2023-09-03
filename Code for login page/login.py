@@ -37,14 +37,29 @@ def protected_page():
     
 @app.route('/protected-page', methods=['POST'])
 def booking_data():
-    try:
         user_data = request.get_json()
-        print(user_data)
-        return jsonify({"message": "Success"})  # Or an appropriate response
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500  # Return an error response
-       
-       
+
+        name=user_data["Name"]
+        email=user_data["Email"]
+        people=user_data["Number of People"]
+        room_type=user_data["Room Type"]
+        phone=user_data["Phone Number"]
+
+        room_no=func.booking(name,email,people,phone,room_type)
+        return jsonify({"message":"Room Booked","Room No":room_no})
+
+@app.route('/customer_info', methods=['GET'])
+def customer_info_page():
+    data=func.return_tabledata()
+    if session.get('is_verified'):
+        # You can add logic here to fetch customer info or display forms.
+        return render_template('checkout.html',data=data)
+    else:
+        return redirect('/')
+
+
+
+
 
 
 
