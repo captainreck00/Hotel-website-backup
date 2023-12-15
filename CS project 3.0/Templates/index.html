@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/6143d1d252.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://storage.googleapis.com/studio-design-asset-files/projects/AXq1lE0GO7/s-25x25_4eb63a71-0b02-409e-b2c7-f4d7e494384e.svg" alt="" id="logo">
+            <p id="name">Radiant Horizon</p>
+        </div>
+        <div class="customer-info">
+            
+            <a href="/customer_info" id="info-link">Customer Info</a>
+        </div>
+        <div class="links">
+            <a class="nav-links"  href="#" data-target="about">About</a>
+            <a class="nav-links"  href="#" data-target="rooms">Rooms</a>
+            <a class="nav-links"  href="#" data-target="services">Services</a>
+            <a class="nav-links"  href="#" data-target="gallery">Gallery</a>
+            <a class="nav-links"  href="#" data-target="things">Things</a>
+            <a class="nav-links"  href="#" data-target="contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="home section">
+        <h1>RADIANT HORIZON</h1>
+        <img src="https://cache.marriott.com/content/dam/marriott-renditions/GOILC/goilc-poolside-bar-4034-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1846px:*" alt="">
+    </div>
+
+    <div class="about section" id="about">
+        <h2 class="heading">About</h2>
+        <p id="about_para">Radiant Horizon is a luxurious hotel nestled in the picturesque hills of Darjeeling, India. With a stunning view of the majestic Kanchenjunga mountain range, our hotel offers a perfect blend of comfort and natural beauty. Whether you're a nature enthusiast, a relaxation seeker, or simply looking for a peaceful escape, Radiant Horizon is your ideal destination. Our elegant accommodations, world-class amenities, and warm hospitality ensure a memorable stay amidst the serene beauty of Darjeeling</p>
+    </div>
+
+    <div class="rooms section" id="rooms">
+        <h2 id="chooseRoom">Choose Room Type</h2>
+        <div class="room-selector">
+            <div class="room-info">
+                <h2>Executive suite</h2>
+                <p class="info-desc">For travelers seeking a blend of business and leisure, our Executive Room is the ideal choice. These rooms are equipped with a dedicated workspace, ensuring you can stay productive while enjoying the serenity of Darjeeling. After work, relax in the well-appointed surroundings and soak in the scenic vistas.</p>
+                <p class="price">Price: ₹20,000 per night</p>
+                <div class="amenities-section">
+                    <h3>Amenities:</h3>
+                    <ul class="amenities-list">
+                        <li class="amenity-item">Inclusive Premium Wi-Fi</li>
+                        <li class="amenity-item ">140 Sq Mt</li>
+                        <li class="amenity-item">TV</li>
+                        <li class="amenity-item">Air Conditioning</li>
+                        <li class="amenity-item">Tea-coffee maker</li>
+                        <li class="amenity-item hidden">Electronic safe</li>
+                        <li class="amenity-item hidden">Iron & ironing board</li>
+                        <li class="amenity-item hidden">Daily housekeeping & turndown service</li>
+                        <li class="amenity-item hidden">BathTub</li>
+                        <li class="amenity-item hidden">Living room with powder room</li>
+                        <li class="amenity-item hidden">Private terrace</li>
+                        <li class="amenity-item hidden">Private pool</li>
+                        <li class="amenity-item hidden">Free Spa</li>
+                        
+                    </ul>
+                </div>
+                <button class="toggle-amenities-btn">Read More</button>
+            </div>
+            <div class="room-img">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/210633517.jpg?k=47dfa614285bc254c259e4805c7fab61b1028f53946ed72eecef93c933c3fa53&o=&hp=1" alt="Room Image">
+            </div>
+            <div class="room-select">
+                <button class="room-btn" data-room="Executive suite"></button>
+                <div class="preferences hidden_room">
+                    <label for="dropdown">Preferences:</label>
+                    <select id="dropdown">
+                        <option value="None">None</option>
+                        <option value="Smoking">Smoking</option>
+                        <option value="Honeymoon">Romantic</option>
+                        <option value="Pet">Pet-Friendly</option>
+                    </select>
+                </div>
+                <div class="add-ons hidden_room">
+                    <div class="add-on-item">
+                        <label for="bed">Extra Bed</label>
+                        <input type="checkbox" id="bed" name="addons" value="bed">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="gym">Gym Access</label>
+                        <input type="checkbox" id="gym" name="addons" value="gym">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="bar">Mini Bar</label>
+                        <input type="checkbox" id="bar" name="addons" value="bar">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="breakfast">Breakfast</label>
+                        <input type="checkbox" id="breakfast" name="addons" value="breakfast">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room-selector">
+            <div class="room-info">
+                <h2>Premier Suite</h2>
+                <p class="info-desc">The Premier Suite at Radiant Horizon is a haven of opulence. This spacious and tastefully decorated suite is perfect for those who desire the utmost in comfort and privacy. You'll have a separate living area, a luxurious bedroom, and panoramic views of the breathtaking surroundings.</p>
+                <p class="price">Price: ₹16,000 per night</p>
+                <div class="amenities-section">
+                    <h3>Amenities:</h3>
+                    <ul class="amenities-list">
+                        <li class="amenity-item">Inclusive Premium Wi-Fi</li>
+                        <li class="amenity-item">TV</li>
+                        <li class="amenity-item">Air Conditioning</li>
+                        <li class="amenity-item">Tea-coffee maker</li>
+                        <li class="amenity-item">Electronic safe</li>
+                        <li class="amenity-item hidden">Iron & ironing board</li>
+                        <li class="amenity-item hidden">BathTub</li>
+                        <li class="amenity-item hidden">Daily housekeeping & turndown service
+                            Living room with dining area, bedroom & bathroom</li>
+                    </ul>
+                </div>
+                <button class="toggle-amenities-btn">Read More</button>
+            </div>
+            
+            <div class="room-img">
+                <img src="https://cdn.webhotelier.net/photos/w=1920/bandung-prmsui/L756146.jpg" alt="Room Image">
+            </div>
+            <div class="room-select">
+                <button class="room-btn" data-room="Premier suite"></button>
+                <div class="preferences hidden_room">
+                    <label for="dropdown">Preferences:</label>
+                    <select id="dropdown">
+                        <option value="None">None</option>
+                        <option value="Smoking">Smoking</option>
+                        <option value="Honeymoon">Romantic</option>
+                        <option value="Pet">Pet-Friendly</option>
+                    </select>
+                </div>
+                <div class="add-ons hidden_room">
+                    <div class="add-on-item">
+                        <label for="bed">Extra Bed</label>
+                        <input type="checkbox" id="bed" name="addons" value="bed">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="gym">Gym Access</label>
+                        <input type="checkbox" id="gym" name="addons" value="gym">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="bar">Mini Bar</label>
+                        <input type="checkbox" id="bar" name="addons" value="bar">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="breakfast">Breakfast</label>
+                        <input type="checkbox" id="breakfast" name="addons" value="breakfast">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room-selector">
+            <div class="room-info">
+                <h2>Deluxe Room</h2>
+                <p class="info-desc">Upgrade your stay with our Deluxe Room, designed for those who seek a bit more space and luxury. These rooms are elegantly furnished, offering a relaxing atmosphere with scenic views of the Kanchenjunga. Sink into plush bedding and unwind in style.
+                </p>
+                <p class="price">Price: ₹14,000 per night</p>
+                <div class="amenities-section">
+                    <h3>Amenities:</h3>
+                    <ul class="amenities-list">
+                        <li class="amenity-item">Inclusive basic Wi-Fi</li>
+                        <li class="amenity-item">TV</li>
+                        <li class="amenity-item">Air Conditioning</li>
+                        <li class="amenity-item">Tea-coffee maker</li>
+                        <li class="amenity-item">Electronic safe</li>
+                        <li class="amenity-item hidden">Iron & ironing board</li>
+                        <li class="amenity-item hidden">Daily housekeeping & turndown service</li>
+                        <li class="amenity-item hidden">Premium Wi-Fi at nominal charge.</li>
+                        <li class="amenity-item hidden">BathTub</li>
+                        <li class="amenity-item hidden"></li>
+                    </ul>
+                </div>
+                <button class="toggle-amenities-btn">Read More</button>
+            </div>
+            <div class="room-img">
+                <img src="https://cache.marriott.com/content/dam/marriott-renditions/GOIMD/goimd-room-0045-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*" alt="Room Image">
+            </div>
+            <div class="room-select">
+                <button class="room-btn" data-room="Deluxe room"></button>
+                <div class="preferences hidden_room">
+                    <label for="dropdown">Preferences:</label>
+                    <select id="dropdown">
+                        <option value="None">None</option>
+                        <option value="Smoking">Smoking</option>
+                        <option value="Honeymoon">Romantic</option>
+                        <option value="Pet">Pet-Friendly</option>
+                    </select>
+                </div>
+                <div class="add-ons hidden_room">
+                    <div class="add-on-item">
+                        <label for="bed">Extra Bed</label>
+                        <input type="checkbox" id="bed" name="addons" value="bed">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="gym">Gym Access</label>
+                        <input type="checkbox" id="gym" name="addons" value="gym">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="bar">Mini Bar</label>
+                        <input type="checkbox" id="bar" name="addons" value="bar">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="breakfast">Breakfast</label>
+                        <input type="checkbox" id="breakfast" name="addons" value="breakfast">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room-selector">
+            <div class="room-info">
+                <h2>Standard Room</h2>
+                <p class="info-desc">The Standard Room at Radiant Horizon offers a cozy and comfortable retreat. It's perfect for solo travelers or couples looking for a peaceful haven. Enjoy a restful night's sleep in a well-appointed room featuring modern amenities and a touch of traditional charm.</p>
+                <p class="price">Price: ₹10,000 per night</p>
+                <div class="amenities-section">
+                    <h3>Amenities:</h3>
+                    <ul class="amenities-list">
+                        <li class="amenity-item">Inclusive basic Wi-Fi</li>
+                        <li class="amenity-item">TV</li>
+                        <li class="amenity-item">Air Conditioning</li>
+                        <li class="amenity-item">Electronic safe</li>
+                        <li class="amenity-item ">Daily housekeeping & turndown service</li>
+                        <li class="amenity-item hidden">Premium Wi-Fi at nominal charge.</li>
+                        <li class="amenity-item hidden">BathTub</li>
+                    </ul>
+                </div>
+                <button class="toggle-amenities-btn">Read More</button>
+            </div>
+            <div class="room-img">
+                <img src="https://s7d1.scene7.com/is/image/marriotts7prod/md-goimd-classic-king-28295:Wide-Hor?wid=1336&fit=constrain" alt="Room Image">
+            </div>
+            <div class="room-select">
+                <button class="room-btn" data-room="standard room"></button>
+                <div class="preferences hidden_room">
+                    <label for="dropdown">Preferences:</label>
+                    <select id="dropdown">
+                        <option value="None">None</option>
+                        <option value="Smoking">Smoking</option>
+                        <option value="Honeymoon">Romantic</option>
+                        <option value="Pet">Pet-Friendly</option>
+                    </select>
+                </div>
+                <div class="add-ons hidden_room">
+                    <div class="add-on-item">
+                        <label for="bed">Extra Bed</label>
+                        <input type="checkbox" id="bed" name="addons" value="bed">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="gym">Gym Access</label>
+                        <input type="checkbox" id="gym" name="addons" value="gym">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="bar">Mini Bar</label>
+                        <input type="checkbox" id="bar" name="addons" value="bar">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="breakfast">Breakfast</label>
+                        <input type="checkbox" id="breakfast" name="addons" value="breakfast">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-info">
+            <h2>Provide Your Information</h2>
+            <form id="userInfoForm" onsubmit="submitForm(event);" action="/protected-page">
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" required><br>
+
+                <label for="customerPhoneNumber">Phone Number:</label>
+                <input type="tel" id="customerPhoneNumber" pattern="[0-9]{10,}" required><br>
+
+                <label for="customerEmail">Email:</label>
+                <input type="email" id="customerEmail" required><br>
+
+                <label for="numberOfPeople">Number of Guests: <span>(Maximum and Minimumn Number of Guests are 4 and 1)</span></label>
+                <input type="number" id="numberOfPeople" min="1" max="4" required><br>
+
+                <label for="CheckIn">CheckIn Date:</label>
+                <input type="date" id="CheckIn" required><br>
+
+                <label for="CheckOut">CheckOut Date:</label>
+                <input type="date" id="CheckOut" required><br>
+
+                
+                <input type="submit" value="Submit Booking">
+            </form>
+            <div id="RoomStatus"></div>
+        </div>
+    </div>
+
+    <div class="services section" id="services">
+        <h2 class="heading" id="serv-head2">Services</h2>
+        <div class="serv-container">
+            <div class="serv">
+                <h3 id="serv-head3">Seamless Connectivity:</h3>
+                <p>Stay connected with complimentary high-speed Wi-Fi available throughout the hotel, ensuring you're always in touch with loved ones or business associates.</p>
+            </div>
+            <div class="serv">
+                <h3 id="serv-head3">Concierge Excellence:</h3>
+                <p>Our dedicated concierge team is available 24/7 to assist with reservations, transportation, and local recommendations. Let us take care of the details while you focus on enjoying your stay.</p>
+            </div>
+            <div class="serv">
+                <h3 id="serv-head3">Pool</h3>
+                <p>Take a dip in our Outdoor swimming pool, surrounded by lush greenery and comfortable loungers. It's the perfect spot for soaking up the sun or unwinding after a busy day.</p>
+            </div>
+            <div class="serv">
+                <h3 id="serv-head3">Fitness & Wellness</h3>
+                <p>Stay active in our modern fitness center equipped with state-of-the-art equipment. For a more relaxing experience, visit our Tranquil Haven Spa for rejuvenating treatments and massages.</p>
+            </div>
+            <div class="serv">
+                <h3 id="serv-head3">Pet Friendly Comfort</h3>
+                <p>At Radiant Horizon, we understand that pets are part of the family. That's why we offer pet-friendly rooms designed to provide your four-legged companions with a comfortable and enjoyable stay.</p>
+            </div>
+            <div class="serv">
+                <h3 id="serv-head3">Luxurious Accomdation</h3>
+                <p>Immerse yourself in the lap of luxury with our meticulously designed rooms and suites. From modern furnishings to plush bedding, we've thought of every detail to ensure your comfort and relaxation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery section" id="gallery">
+        <h2 class="heading">Gallery</h2>
+        <div class="carousel">
+            <button class="carousel-btn next">&#x2192</button>
+            <div class="carousel-container">
+                <ul class="carousel-track">
+                    <li class="slides currentSlide">
+                        <img class="carousel-images" src="https://plus.unsplash.com/premium_photo-1697730411634-5313371ad8fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="slide-text">
+                            <h3>Baga Beach</h3>
+                            <p> A paradise of stunning views, vibrant atmosphere, and unforgettable experiences. It’s not just a beach, it’s a lifestyle.</p>
+                        </div>
+                    </li>
+                    <li class="slides">
+                        <img class="carousel-images" src="https://im.whatshot.in/img/2021/May/bom-jesus-1621507672.jpg" alt="">
+                        <div class="slide-text">
+                            <h3>Basilica of Bom Jesus</h3>
+                            <p>Basilica of Bom Jesus, Goa's oldest church and a UNESCO World Heritage site, stands as a testament to the region's rich history and architectural splendor.</p>
+                        </div>
+                    </li>
+                    <li class="slides">
+                        <img class="carousel-images" src="https://static.toiimg.com/thumb/msid-94092579,width-1280,height-720,resizemode-4/94092579.jpg" alt="">
+                        <div class="slide-text">
+                            <h3>Dudhsagar Falls</h3>
+                            <p>Dudhsagar Falls, cascading down the lush slopes of the Western Ghats in Goa, is a mesmerizing spectacle that will leave you breathless.</p>
+                        </div>
+                    </li>
+                    <li class="slides">
+                        <img class="carousel-images" src="https://luxebook.in/wp-content/uploads/2023/02/goa-houseboat-trip-chapora-river.jpeg" alt="">
+                        <div class="slide-text">
+                            <h3>Backwaters of Goa</h3>
+                            <p>Gently glide through Goa's tranquil backwaters, a serene escape into a world of lush greenery, rustic villages, and breathtaking natural beauty.</p>
+                        </div>
+                    </li>
+                    <li class="slides">
+                        <img class="carousel-images" src="https://travelogyindia.b-cdn.net/storage/app/upload/vagtor-beach-goa-nightlife.jpg" alt="">
+                        <div class="slide-text">
+                            <h3>Goa's nightlife</h3>
+                            <p>Goa's nightlife is a captivating realm of thrilling adventures, a symphony of sounds, lights, and electrifying energy that transforms the state into India's party paradise.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn prev is-hidden">&#x2190</button>
+            <div class="carousel-nav">
+                <button class="carousel-indicator currentSlide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="things section" id="things">
+        <h2 class="heading" id="things-top">Things To Do In Goa</h2>
+        <div class="things-container"> 
+
+            <div class="explore">
+                <h3 class="things-head">Indulge in Beach Bliss</h3>
+                <p class="things-desc"> Goa is blessed with an abundance of pristine beaches, each with its own unique charm. From the bustling party scene of Baga Beach to the serene tranquility of Palolem Beach, there's a beach to suit every taste and preference. Sunbathe, swim, surf, or simply relax and soak up the sun's warmth as you gaze out at the azure waters of the Arabian Sea.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Explore Old Goa's UNESCO Heritage</h3>
+                <p class="things-desc">Immerse yourself in the rich history and culture of Goa by exploring Old Goa, a UNESCO World Heritage Site. Wander through the ruins of churches like the Basilica of Bom Jesus, the Se Cathedral, and the Church of St. Francis Xavier. Admire the architectural beauty and learn about the region's fascinating past.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Embark on Water Adventures</h3>
+                <p class="things-desc">Goa offers a plethora of thrilling water sports that will get your adrenaline pumping. Go kitesurfing, windsurfing, or stand-up paddleboarding, or simply rent a boat and cruise along the coast, taking in the breathtaking scenery. For a more adventurous experience, try parasailing or water skiing.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Experience Goa's Vibrant Nightlife</h3>
+                <p class="things-desc">Goa is renowned for its pulsating nightlife, and there's something for everyone, from laid-back beach bars to lively nightclubs. Dance the night away to a mix of international and local music, or simply enjoy a drink and soak up the vibrant atmosphere. Some popular hotspots include Tito's Lane in Baga, Anjuna Flea Market, and Vagator Beach.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Indulge in Culinary Delights</h3>
+                <p class="things-desc">Goa's cuisine is a delightful blend of Portuguese, Indian, and Goan influences, creating a unique and flavorful culinary experience. Sample authentic Goan dishes like vindaloo, xacuti, and sorpotel, or try the local seafood specialties like prawn curry and pomfret fry. Don't forget to wash it all down with a refreshing glass of Feni, Goa's signature liquor.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Explore the Backwaters of Goa</h3>
+                <p class="things-desc">Venture into the tranquil backwaters of Goa and experience the serene beauty of this unique ecosystem. Take a leisurely boat ride along the serene canals, surrounded by lush greenery and traditional villages. Enjoy the tranquility of this hidden gem, away from the hustle and bustle of the beaches.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Admire the Natural Beauty</h3>
+                <p class="things-desc">Goa offers a variety of natural wonders to explore, from waterfalls like Dudhsagar Falls to the lush hills of the Western Ghats. Embark on hiking or trekking trails, or simply relax by the waterfalls and enjoy the serenity of nature. Don't forget to capture the breathtaking views with your camera.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact section" id="contact">
+        <div class="contact-container">
+            <div class="contact-elem social-media">
+                <h3>Connect With Us</h3>
+                <a href="https://www.facebook.com" class="contact-link" target="_blank">
+                    <button class="social-link"><i class="fa-brands fa-facebook"></i> Facebook</button>
+                </a>
+                <a href="https://www.instagram.com" class="contact-link" target="_blank">
+                    <button class="social-link"><i class="fa-brands fa-instagram"></i> Instagram</button>
+                </a>
+                <a href="https://www.youtube.com" class="contact-link" target="_blank">
+                    <button class="social-link"><i class="fa-brands fa-youtube"></i> Youtube</button>
+                </a>
+                <a href="https://www.twitter.com" class="contact-link" target="_blank">
+                    <button class="social-link"><i class="fa-brands fa-x-twitter"></i> Twitter</button>
+                </a>
+            </div>
+    
+            <div class="contact-elem business-hours">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 9:00 AM - 9:00 PM</p>
+            </div>
+    
+            <div class="contact-elem additional-info">
+                <h3>Additional Contact Information</h3>
+                <p>Email: RadiantHorizon@gmail.com</p>
+                <p>Phone Number: +91 (123) 456-7890</p>
+                <p>Address: 123 Main Street, Goa, India</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
